@@ -12,14 +12,36 @@ return {
       require "configs.lspconfig"
     end,
   },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  {
+    'williamboman/mason.nvim',
+    opts = {
+      ensure_installed = {
+        'gopls',
+        'bash-language-server',
+        'awk-language-server',
+        'rust-analyzer',
+        'prisma-language-server',
+        'docker-compose-language-service',
+        'dockerfile-language-server',
+        'clangd',
+        'nginx-language-server',
+      },
+    },
+  },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+  	    "html", "css",
+        "go",
+        "prisma"
+  		},
+  	},
+  },
 }

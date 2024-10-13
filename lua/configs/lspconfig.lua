@@ -4,8 +4,24 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls" }
+local servers = {
+  'html',
+  'cssls',
+  'gopls',
+  'bashls',
+  -- 'awk_ls',
+  'rust_analyzer',
+  'prismals',
+  'docker_compose_language_service',
+  'dockerls',
+  'clangd',
+  'nginx_language_server',
+  'cmake',
+  'biome',
+}
 local nvlsp = require "nvchad.configs.lspconfig"
+
+require("mason-lspconfig").setup()
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -23,4 +39,4 @@ end
 --   capabilities = nvlsp.capabilities,
 -- }
 
-require('lspconfig').gopls.setup({})
+require('lspconfig').biome.setup({})

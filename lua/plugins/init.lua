@@ -1,46 +1,36 @@
 return {
   {
-    "stevearc/conform.nvim",
+    'stevearc/conform.nvim',
     -- event = 'BufWritePre', -- uncomment for format on save
-    opts = require "configs.conform",
+    opts = require 'configs.conform',
   },
 
   -- These are some examples, uncomment them if you want to see them work!
   {
-    "neovim/nvim-lspconfig",
+    'neovim/nvim-lspconfig',
     config = function()
-      require "configs.lspconfig"
+      require 'configs.lspconfig'
     end,
   },
+  -- {
+  --   'mrcjkb/rustaceanvim',
+  --   version = '^5', -- Recommended
+  --   lazy = false, -- This plugin is already lazy
+  -- },
   {
-    'mrcjkb/rustaceanvim',
-    version = '^5', -- Recommended
-    lazy = false, -- This plugin is already lazy
+    'williamboman/mason-lspconfig.nvim',
   },
   {
-    'williamboman/mason.nvim',
-    opts = {
-      ensure_installed = {
-        'gopls',
-        'bash-language-server',
-        'awk-language-server',
-        'rust-analyzer',
-        'prisma-language-server',
-        'docker-compose-language-service',
-        'dockerfile-language-server',
-        'clangd',
-        'nginx-language-server',
-      },
-    },
-  },
-  {
-  	"nvim-treesitter/nvim-treesitter",
+  	'nvim-treesitter/nvim-treesitter',
   	opts = {
   		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-  	    "html", "css",
-        "go",
-        "prisma"
+  			'vim', 'lua', 'vimdoc',
+  	    'html', 'css',
+        'go',
+        'prisma',
+        'javascript',
+        'awk',
+        'bash',
   		},
   	},
   },

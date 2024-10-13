@@ -35,3 +35,15 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-------------------------------------------------
+
+local telescope = require('telescope')
+
+telescope.setup{
+  pickers = {
+    find_files = {
+      hidden = true
+    },
+  },
+}

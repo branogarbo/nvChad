@@ -9,7 +9,7 @@ local servers = {
   'cssls',
   'gopls',
   'bashls',
-  -- 'awk_ls',
+  'awk_ls',
   'rust_analyzer',
   'prismals',
   'docker_compose_language_service',

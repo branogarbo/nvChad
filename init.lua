@@ -40,10 +40,24 @@ end)
 
 local telescope = require('telescope')
 
-telescope.setup{
+telescope.setup({
   pickers = {
     find_files = {
       hidden = true
     },
   },
-}
+})
+
+local nt = require('nvim-tree')
+
+nt.setup({
+  sort = {
+    sorter = 'case_sensitive',
+  },
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 500,
+  },
+})
+

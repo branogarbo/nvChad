@@ -31,6 +31,7 @@ return {
         'javascript',
         'awk',
         'bash',
+        'svelte',
   		},
   	},
   },

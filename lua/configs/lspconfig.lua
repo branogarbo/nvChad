@@ -18,6 +18,7 @@ local servers = {
   'nginx_language_server',
   'cmake',
   'biome',
+  'svelte',
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

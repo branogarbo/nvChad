@@ -61,3 +61,7 @@ nt.setup({
   },
 })
 
+local md = require('render-markdown')
+
+md.setup({})
+

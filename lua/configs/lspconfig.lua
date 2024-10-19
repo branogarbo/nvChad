@@ -19,6 +19,7 @@ local servers = {
   'cmake',
   'biome',
   'svelte',
+  'arduino_language_server',
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
@@ -41,3 +42,4 @@ end
 -- }
 
 require('lspconfig').biome.setup({})
+

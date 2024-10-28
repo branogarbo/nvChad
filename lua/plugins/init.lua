@@ -32,6 +32,7 @@ return {
         'awk',
         'bash',
         'svelte',
+        'python',
   		},
   	},
   },

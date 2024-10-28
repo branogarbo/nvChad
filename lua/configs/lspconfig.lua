@@ -20,6 +20,7 @@ local servers = {
   'biome',
   'svelte',
   'arduino_language_server',
+  'pyright',
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
@@ -41,5 +42,5 @@ end
 --   capabilities = nvlsp.capabilities,
 -- }
 
-require('lspconfig').biome.setup({})
+-- require('lspconfig').biome.setup({})
 

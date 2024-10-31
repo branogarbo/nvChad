@@ -21,6 +21,7 @@ local servers = {
   'svelte',
   'arduino_language_server',
   'pyright',
+  'jdtls',
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

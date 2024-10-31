@@ -33,6 +33,7 @@ return {
         'bash',
         'svelte',
         'python',
+        'java',
   		},
   	},
   },

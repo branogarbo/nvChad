@@ -59,7 +59,7 @@ local nt = require('nvim-tree')
 nt.setup({
   filters = {
     custom = {
-      '.git'
+      '^.git$'
     },
   },
   sort = {
